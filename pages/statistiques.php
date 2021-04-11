@@ -11,40 +11,22 @@ if(session_status() == PHP_SESSION_NONE){
         <p class="h2 text-center text-dark text-uppercase font-weight-bold">Statistiques des Pointages</p>
         <hr class="line-seprate">
         <section class="statistic statistic2">
-                <div class="container">
+                
+        </div>
                     <div class="row">
-                        <a href="./index.php?p=employe" class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--green">
-                                <h2 class="number">...</h2>
-                                <span class="desc">employés</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-accounts"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./index.php?p=departement" class="col-md-6 col-lg-3">
-
-                            <div class="statistic__item statistic__item--orange">
-                                <h2 class="number">...</h2>
-                                <span class="desc">départements</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-group-work"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./index.php?p=pointage" class="col-md-6 col-lg-3">
+                                                <a href="./index.php?p=filiere" class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--blue">
                                 <h2 class="number">...</h2>
-                                <span class="desc">pointages</span>
+                                <span class="desc">filieres</span>
                                 <div class="icon">
                                     <i class="zmdi zmdi-check"></i>
                                 </div>
                             </div>
                         </a>
-                        <a href="./index.php?p=fonction" class="col-md-6 col-lg-3">
+                        <a href="./index.php?p=classes" class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--red">
                                 <h2 class="number">...</h2>
-                                <span class="desc">fonctions</span>
+                                <span class="desc">classes</span>
                                 <div class="icon">
                                     <i class="zmdi zmdi-settings"></i>
                                 </div>
@@ -52,7 +34,16 @@ if(session_status() == PHP_SESSION_NONE){
                         </a>
                     </div>
                 </div>
+				<div class="container">
+				<div id="chart-container">
+            <canvas id="mycanvas"></canvas>
+			<script src="script/chart.min.js" type="text/javascript"></script>
+			<script src="script/jquery-3.3.1.min.js" type="text/javascript"></script>
+			<script src="script/app.js" type="text/javascript"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js" type="text/javascript"></script>
             </section>
+			
+        
     </div>
 </div>
 <script src="script/statistique.js" type="text/javascript"></script>

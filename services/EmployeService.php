@@ -65,4 +65,8 @@ class EmployeService implements IDao {
                     $o->getPassword(), $o->getRole(), $o->getPhoto(), $o->getFonction(), $o->getDepartement(), $o->getCin())) or die('Error');
     }
 
+    public function findByIdFiliere($idfilier){
+
+    }
+
 }
